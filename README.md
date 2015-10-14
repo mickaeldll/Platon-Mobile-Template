@@ -2,7 +2,7 @@
 
 "Platon" is a Mobile Template for creating your next App or WebApp.
 
-[Download on Github](http://tympanus.net/codrops/?p=24660)
+[Download on Github](https://github.com/mickaeldll/Platon-Mobile-Template/archive/master.zip)
 
 [Demo](http://mickaelguillaume.esy.es/Platon/index.html)
 
@@ -43,6 +43,5 @@ GNU General Public License v3.0 [Read more about our license.](http://www.gnu.or
 ## Misc
 
 Follow Mickael Guillaume: [Twitter](https://twitter.com/guillaumemick), [Behance](https://www.behance.net/mickaeldll)
-
 
 
