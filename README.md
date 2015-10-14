@@ -2,8 +2,6 @@
 
 "Platon" is a Mobile Template for creating your next App or WebApp.
 
-[Download on Github](https://github.com/mickaeldll/Platon-Mobile-Template/archive/master.zip)
-
 [Demo](http://mickaelguillaume.esy.es/Platon/index.html)
 
 ## License
