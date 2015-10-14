@@ -1,0 +1,861 @@
+@import "compass";
+
+/*
+===============================================
+[Main stylesheet my-app.css]
+
+Author:	        Guillaume Mickael
+Version:	    1.0
+Created:	    28.09.2015
+Last updated:	14.10.2015
+Template:	    Platon - HTML Mobile and Tablet Template
+
+[Table of Contents]
+
+0. GENERAL
+1. MENU
+2. NAVBAR
+3. CHAT
+4. MESSAGES
+5. SOCIAL-CONNECTION
+6. NEWS
+7. FRIENDS
+8. PROFILE
+9. FEED
+10. POST
+11. FULL PROFILE
+12. EDIT PROFILE
+13. NEW POST
+14. LIST
+15. INTRO
+16. TOUR
+17. USERLIST
+18. LOGIN
+19. NOTIFICATIONS
+
+=================================================
+*/
+
+$fonts: 'Open Sans', sans-serif;
+$navbar_color: white;
+$toolbar_color: white;
+
+/* -----------------------------------*/
+
+
+/* ---------->>> GENERAL <<<-----------*/
+
+
+/* -----------------------------------*/
+
+body{
+    font-family: $fonts;
+}
+p{
+    color: #262626;
+    margin: 30px 0;
+    font-size: 12px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #262626;
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: #262626;
+}
+h3{
+    font-size: 16px;
+    font-weight: 400;
+    color: #262626;
+}
+h4{
+    font-size: 14px;
+    font-weight: 400;
+    color: #262626;
+}
+h5{
+    font-size: 12px;
+    font-weight: 400;
+    color: #262626;
+}
+h6{
+    font-size: 10px;
+    font-weight: 400;
+    color: #262626;
+}
+.page-content{
+    background-color: white;
+}
+div[class*="col-"] {
+    text-align: center;
+    color: #000;
+}
+.row {
+    margin-bottom: 15px;
+}
+::-webkit-input-placeholder{ 
+    color:#333; 
+    font-size: 14px;
+}
+::-moz-placeholder{ 
+    color:#333; 
+    font-size: 14px;
+}
+:-ms-input-placeholder{ 
+    color:#333; 
+    font-size: 14px;
+}
+input:-moz-placeholder{ 
+    color:#333; 
+    font-size: 14px;
+}
+.list-block {
+    margin: 0;
+    font-size: 12px;
+}
+.button {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #3498db;
+    border-radius: 15px;
+    border: 1px solid #3498db;
+}
+.button.active {
+    background: #2ecc71;
+    border: none;
+}
+img.responsive{
+    max-width: 100%;
+    height: auto;
+}
+ul.no-border:before{
+    display: none;
+}
+.item-after {
+    color: #adadad!important;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+.item-title-row{
+    background: none!important;
+}
+img.rounded{
+    border-radius: 90px;
+}
+a.tab-link.active{
+    font-size: 12px;
+    font-weight: 600;
+    color: #1c1c1c;
+    text-transform: uppercase;
+}   
+a.tab-link{
+    font-size: 12px;
+    font-weight: 600;
+    color: #adadad;
+    text-transform: uppercase;
+}
+.list-block .item-title {
+    white-space: initial;
+}
+.item-title.label {
+    font-weight: 600;
+}
+input,
+select{
+    color: #262626!important;
+    font-size: 14px!important;
+}
+.toolbar{
+    background-color: $toolbar_color;
+}
+.fa{
+    color: #333;
+}
+.swiper-container {
+    height: 100%;
+    border-radius: 2px;
+}
+.swiper-slide {
+    background:#fff;
+}
+.swiper-slide span {
+    text-align:center;
+    display:block;
+    margin:20px;
+    font-size:21px;
+}
+.swiper-container-horizontal>.swiper-pagination {
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    position: relative;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #2ecc71;
+}
+.list-block .item-subtitle {
+    font-size: 14px;
+    color: #333;
+}
+.list-block.media-list .item-link .item-title-row {
+    padding-right: 0px;
+}
+.item-title {
+    color: #262626;
+    font-size: 16px;
+}
+.item-text {
+    color: #333!important;
+    font-size: 12px!important;
+    height: 100%!important;
+    display: block!important;
+}
+.item-title.label{
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> MENU <<<-----------*/
+
+
+/* -----------------------------------*/
+
+ul.menu{    
+    background-color: #1c1c1c;
+}
+ul.menu:before,
+ul.menu:after{
+    display: none;
+}
+.item-inner.menu:after{
+    display: none;
+}
+.item-inner.menu{
+    background: none!important;
+}
+.menu-title {
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+.item-title.menu{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.item-title.menu:active{
+   color: #4a4a4a;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.panel{
+    background-color: #1c1c1c;
+}
+.item-link.item-content.active-state{
+    background-color: #1c1c1c;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> NAVBAR <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.navbar{
+    background-color: $navbar_color;
+    color: #333;
+}
+.navbar:after {
+    color: #c0c0c0;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> CHAT <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.messages-date span {
+    color: #adadad;
+    font-size: 10px;
+}
+.message-received .message-text {
+    background-color: #e8e8e8;
+}
+.message-sent .message-text {
+    background-color: #3498db;
+}
+.message .message-text {
+    padding: 9px 16px 9px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+span.ti-check.delivered{
+    color: #2ecc71;
+    margin-right: 5px;
+}
+.message-label {
+    font-size: 12px;
+    color: #adadad;
+}
+.toolbar.messagebar {
+    background-color: white;
+}
+.messagebar textarea {
+    color:#333; 
+    font-size: 12px;
+    border: none;
+}
+a.link.send{
+    color:#333; 
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> MESSAGES <<<-----------*/
+
+
+/* -----------------------------------*/
+
+span.navigation{
+    font-size: 12px;
+    color: #1c1c1c;
+    font-weight: 600;
+    text-transform: uppercase
+}
+a.delete{
+    background-color: #e74c3c!important;
+}
+span.ti-close.delete{
+    color: white;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> SOCIAL CONNECTION <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.page-content.social-connection{
+    background-color: #f0f0f0;
+}
+
+.list-block.media-list .item-title.social-connection {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+span.ti-check.connected {
+    color: white;
+    margin-right: 5px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> NEWS <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.item-subtitle.news{
+    color: #333;
+    font-size: 12px;
+}
+span.photos{
+    margin-left: 5px;
+}
+
+.list-block.media-list .item-inner.news {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> FRIENDS <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.friend-name {
+    color: #262626;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+div[class*="friends-col-"] {
+    width: 70px;
+}
+.circle-green {
+    background-color: #2ecc71;
+    height: 8px;
+    border-radius: 90px;
+    width: 8px;
+    position: relative;
+    margin: 0 auto;
+    top: -57px;
+}
+.circle {
+    background-color: white;
+    height: 12px;
+    border-radius: 90px;
+    width: 12px;
+    position: relative;
+    margin: 0 auto;
+    top: -47px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> PROFILE <<<-----------*/
+
+
+/* -----------------------------------*/
+
+img.responsive.cover{
+    z-index: 1;
+    position: relative;
+    -webkit-filter: brightness(60%);
+}
+.profile-name{
+    font-weight: 300;
+    color: white;
+    font-size: 30px;
+    margin-top: -100px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+.profile-description {
+    font-size: 12px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.center.profile {
+    margin-top: 22px;
+} 
+.tabs.profile {
+    height: 100%;
+    margin-top: -20px;
+}
+.list-block.media-list .item-title.profile {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.item-after.profile {
+    margin-top: 9px;
+}
+div[class*="profile-col-"] {
+    width: 85px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> FEED <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.list-block.media-list .item-inner.feed {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> POST <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.post-name {
+    font-weight: 300;
+    color: white;
+    font-size: 21px;
+    margin-top: -100px;
+    z-index: 2;
+    position: relative;
+    padding: 0 15px;
+}
+.list-block.post {
+    position: relative;
+    z-index: 2;
+}
+.list-block ul.post {
+    background: none;
+}
+.item-title.post {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.item-after.post {
+    font-size: 12px;
+    font-weight: 400;
+    color: white!important;
+    margin-top: 14px;
+    text-transform: none;
+}
+ul.no-border.post:after{
+    display: none;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> Full Profile <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.list-block.full-profile.margin {
+    margin-top: 22px;
+}
+.item-title.full-profile {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1c1c1c;
+    text-transform: uppercase;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> Edit Profile <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.userpic{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+p.userpic{
+    text-align: center;
+}
+.personal-info,
+.social-connect{
+    margin-top: 35px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> NEW POST <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.item-title.new-post {
+    font-size: 15px;
+    color: #1c1c1c;
+    font-weight: 600!important;
+    margin-top: 3px;
+}
+.content-block.new-post {
+    margin: 10px 0;
+    padding: 0;
+}
+.list-block textarea.new-post {
+    height: 320px;
+}
+ul.no-border.new-post:after{
+    display: none
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> LIST <<<-----------*/
+
+
+/* -----------------------------------*/
+
+label.label-checkbox input[type=checkbox]:checked+.item-media i.icon-form-checkbox, label.label-checkbox input[type=radio]:checked+.item-media i.icon-form-checkbox{
+    background-color: #2ecc71;
+}
+label.label-radio input[type=radio]:checked~.item-inner {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2013%2010'%3E%3Cpolygon%20fill%3D'%232ecc71'%20points%3D'11.6%2C0%204.4%2C7.2%201.4%2C4.2%200%2C5.6%204.4%2C10%204.4%2C10%204.4%2C10%2013%2C1.4%20'%2F%3E%3C%2Fsvg%3E")
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> INTRO <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.image-background {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+}
+.image-background img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    -webkit-filter: brightness(60%);
+}
+p.title {
+    position: relative;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+}
+span.intro{
+    position: relative;
+    top: 5px;
+}
+a.button-intro.button-round.intro {
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    bottom: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    line-height: 27px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: 0 0;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 27px;
+}
+a.button-intro.button-round.intro.login {
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    bottom: 130px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    line-height: 27px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: 0 0;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 27px;
+}
+a.button-intro.button-round.intro.active-state,
+a.button-intro.button-round.intro.login.active-state {
+    background-color: white;
+    border: 1px solid white;
+    color: #333;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> TOUR <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.card.tour{
+    margin: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+span.ti-cup,
+span.ti-briefcase,
+span.ti-car{
+    font-size: 130px;
+}
+p.tour-title{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+}
+p.tour-content {
+    text-align: center;
+    color: #333;
+    margin-top: -15px;
+    padding: 15px;
+}
+.card-content.tour {
+    height: 100%;
+}
+
+.card-content-inner.tour{
+    padding: 0;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> USERLIST <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.item-after.userlist {
+    margin-top: 10px;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> LOGIN <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.login-screen-title {
+    position: relative;
+    color: #333;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+}
+ul.login{
+    margin-top: 50px;
+}
+.item-title.label.login {
+    font-size: 12px;
+    color: #1c1c1c;
+    text-transform: uppercase;
+}
+.list-block .item-link.list-button {
+    text-align: center;
+    color: white;
+    display: block;
+    line-height: 43px;
+    background-color: #3dd37c;
+    width: 100%;
+    padding: 0;
+}
+a.button-intro.button-round.login {
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 40px;
+    bottom: -95px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #333;
+    border: 1px solid #333;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    line-height: 27px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: 0 0;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 27px;
+}
+a.button-intro.button-round.login.active-state {
+    background-color: #333;
+    border: 1px solid white;
+    color: white;
+}
+
+/* -----------------------------------*/
+
+
+/* ---------->>> NOTIFICATIONS <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.item-text.notif{
+    height: 100%;
+    margin-top: 15px;
+}
