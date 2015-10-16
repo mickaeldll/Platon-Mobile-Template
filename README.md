@@ -1,6 +1,6 @@
-# "Platon" Mobile Template
+# Platon Mobile Template
 
-"Platon" is a Mobile Template for creating your next App or WebApp.
+Platon is a Mobile Template for creating your next App or WebApp.
 
 [Demo](http://mickaelguillaume.esy.es/Platon/index.html)
 
